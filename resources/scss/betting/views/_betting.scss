@@ -1,0 +1,13 @@
+.betting-page {
+  display: flex;
+  flex-direction: column;
+
+  min-height: calc(100vh - 320px);
+  padding-top: 70px;
+}
+
+@media(max-width: 920px) {
+  .betting-page {
+    padding-top: 80px;
+  }
+}

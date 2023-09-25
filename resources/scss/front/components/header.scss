@@ -1,0 +1,227 @@
+.header {
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  z-index: 5;
+}
+
+.header__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+}
+
+.header__small-row {
+  height: 60px;
+
+  border-bottom: solid 1px $Grey;
+}
+
+.header__small-row-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* language select */
+
+.header__language-switcher {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+
+  user-select: none;
+  cursor: pointer;
+}
+.header__language-selected {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  &:hover {
+    .header__language-carret {
+      path {
+        fill: $Light;
+      }
+    }
+  }
+}
+.header__language-flag {
+  display: inline-flex;
+
+  width: 18px;
+  height: 18px;
+
+  margin-right: 12px;
+}
+.header__language-carret {
+  display: inline-flex;
+
+  margin-left: 6px;
+
+  width: 16px;
+  height: 16px;
+
+  transition: $transitionHover;
+
+  path {
+    fill: $LightGrey;
+    transition: $transitionHover;
+  }
+
+  &.header__language-carret--reverse {
+    transform: rotate(-180deg);
+  }
+}
+.header__language-menu {
+  position: absolute;
+
+  left: 0;
+  top: calc(100% + 10px);
+
+  width: 110px;
+  height: auto;
+
+  border-radius: 8px;
+  border: 1px solid #383B54;
+
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+
+  background: $Dark;
+
+  display: none;
+}
+.header__language-menu--open {
+  display: flex;
+  flex-direction: column;
+}
+.header__language-item {
+  display: flex;
+  flex-direction: row;
+
+  padding: 9px 10px;
+
+  border-bottom: solid 1px $Grey;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+/* end language select */
+
+/* additional links */
+.header__additional-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  margin-left: auto;
+}
+.header__additional-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.header-metamask-login {
+  display: inline-flex;
+  margin: 0 17px;
+  cursor: pointer;
+}
+.header__additional-link-icon {
+  margin-right: 10px;
+}
+/* end additional links */
+
+/* big row */
+.header__big-row {
+  height: 100px;
+}
+
+.header__big-row-container {
+  display:  flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  height: 40px;
+
+  margin-right: auto;
+}
+
+.header__nav-menu {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: 180px;
+
+  li {
+    a {
+      display: inline-block;
+      padding: 10px 30px;
+    }
+  }
+}
+
+.header__cabinet-link {
+  margin-left: 50px;
+}
+
+.betting-header__user {
+  align-items: center;
+}
+
+.betting-header__maran-icon {
+  width: 24px;
+  height: 24px;
+
+  margin-left: 8px;
+}
+
+.betting-header__user-link {
+  margin-left: 20px;
+
+  justify-content: flex-end;
+  align-items: center;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+@media(max-width: 1080px) {
+  .header__nav-menu {
+    li {
+      a {
+        padding: 10px 15px;
+      }
+    }
+  }
+
+  .header__logo {
+    height: 32px;
+  }
+}

@@ -1,0 +1,98 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.input {
+  padding: 0 15px;
+
+  height: 48px;
+
+  border: solid 1px $Grey;
+  border-radius: 8px;
+
+  background: $Dark;
+
+  color: $Light;
+
+  box-shadow: none;
+
+  transition: $transitionHover;
+
+  &:hover {
+    border-color: $LightGrey;
+  }
+
+  &:focus {
+    border-color: $Yellow;
+  }
+}
+
+.input-auth-group {
+  position: relative;
+
+  .input-auth-name {
+    position: absolute;
+
+    left: 25px;
+    top: 17px;
+
+    color: $Light;
+    opacity: .6;
+
+    font-size: 16px;
+  }
+
+  &>input.input-auth--filled {
+    padding-top: 0;
+
+    &~.input-auth-name {
+      display: none;
+    }
+  }
+
+  &>input:focus {
+    padding-top: 12px;
+
+    &~.input-auth-name {
+      font-size: 12px;
+      top: 5px;
+      display: block;
+    }
+  }
+}
+
+.input-auth {
+  height: 56px;
+  width: 100%;
+  padding: 0 25px;
+
+  background: rgba(217, 217, 217, 0.05);
+
+  border: solid 1px $Grey;
+  border-radius: 8px;
+
+  color: $Light;
+
+  transition: $transitionHover;
+
+  &::placeholder {
+    color: $Light;
+    opacity: .6;
+  }
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:focus {
+    -webkit-box-shadow:0 0 0 50px $Dark inset;
+    -webkit-text-fill-color: $Light;
+  }
+
+  &:hover {
+    border-color: $LightGrey;
+  }
+}

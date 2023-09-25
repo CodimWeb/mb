@@ -1,0 +1,452 @@
+.betting-events {
+  &__nothing {
+    justify-content: center;
+
+    width: 100%;
+    padding: 25px 15px;
+
+    margin-bottom: 30px;
+
+    background: rgba(237, 238, 246, 0.05);
+
+    border: solid 1px #585B70;
+    border-radius: 8px;
+
+    text-align: center;
+  }
+
+  &__filters {
+    border-bottom: solid 1px $Grey;
+    margin-bottom: 30px;
+
+    &-item {
+      @extend .flex-row;
+
+      padding: 10px 0;
+      margin-bottom: -1px;
+      margin-right: 30px;
+      border-bottom: solid 3px transparent;
+
+      cursor: pointer;
+      user-select: none;
+
+      opacity: .6;
+
+      transition: $transitionHover;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &--active {
+        border-bottom-color: $Yellow;
+        opacity: 1;
+      }
+    }
+  }
+
+
+  &__loading {
+    .betting-events {
+      &__champ {
+        &-title {
+          align-items: center;
+
+          &::before,
+          &::after {
+            content: '';
+          }
+
+          &::before {
+            width: 20px;
+            height: 20px;
+            margin-right: 14px;
+
+            background: rgba($Light, .15);
+            border: solid 1px $Grey;
+            border-radius: 50%;
+          }
+
+          &::after {
+            width: 190px;
+            height: 10px;
+
+            background: rgba($Grey, .4);
+
+            border-radius: 4px;
+          }
+        }
+      }
+
+      &__game {
+        align-items: center;
+
+        &-favourite-icon--loading {
+          width: 24px;
+          height: 24px;
+
+          margin-right: 12px;
+
+          background-image: url('../img/star--loading.svg');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+
+        &-date {
+          &::before {
+            content: '';
+
+            display: inline-block;
+
+            width: 140px;
+            height: 10px;
+
+            max-width: 100%;
+
+            background: rgba($Grey, .4);
+
+            border-radius: 4px;
+          }
+        }
+
+        &-group {
+          &-row-big {
+            &>div {
+              align-items: center;
+
+              &::before,
+              &::after {
+                content: '';
+                display: inline-block;
+              }
+
+              &::before {
+                width: 20px;
+                height: 20px;
+
+                margin-right: 14px;
+
+                background: rgba($Light, .15);
+
+                border: solid 1px $Grey;
+                border-radius: 50%;
+              }
+
+              &::after {
+                width: 100px;
+                height: 10px;
+                max-width: 100%;
+
+                background: rgba($Grey, .4);
+
+                border-radius: 4px;
+              }
+            }
+          }
+
+          .betting-events__game-teams-grid {
+            &-text {
+              justify-content: center;
+              align-items: center;
+
+              &::before {
+                content: '';
+
+                display: inline-block;
+
+                width: 72px;
+                height: 10px;
+                max-width: 100%;
+
+                background: rgba($Grey, .4);
+
+                border-radius: 4px;
+              }
+            }
+
+          }
+
+
+        }
+
+      }
+    }
+  }
+
+  &__subcategory {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    background: $Dark;
+
+    border: solid 1px $Grey;
+    border-radius: 14px;
+
+    // margin-bottom: 30px;
+
+    overflow: hidden;
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+
+      width: 100%;
+    }
+
+    &-title {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      width: 100%;
+      padding: 6px 10px;
+
+      background: linear-gradient(90deg, rgba(68, 111, 221, 0.55) 0%, rgba(68, 111, 221, 0.11) 100%);
+
+      border-bottom: solid 1px $Grey;
+
+      &--live {
+        &::before,
+        &::after {
+          content: '';
+          display: inline-block;
+        }
+
+        &::before {
+          width: 0px;
+          height: 32px;
+        }
+
+        &::after {
+          width: 6px;
+          height: 6px;
+
+          margin-left: 8px;
+
+          background: #AC1414;
+
+          border-radius: 50%;
+        }
+      }
+    }
+
+    &-icon {
+      width: 32px;
+      height: 32px;
+
+      margin-right: 9px;
+
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      &--loading {
+        background-image: url('../img/loading-icon.svg');
+        -webkit-animation: spin 1s linear infinite;
+        -moz-animation: spin 1s linear infinite;
+        animation: spin 1s linear infinite;
+      }
+    }
+  }
+
+  &__champ {
+    &-container {
+      display: flex;
+      flex-direction: column;
+
+      width: 100%;
+    }
+
+    &-title {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      width: 100%;
+      padding: 12px 20px;
+
+      background: rgba(217, 217, 217, 0.05);
+
+      border-bottom: solid 1px $Grey;
+    }
+  }
+
+  &__game {
+    &-score {
+      padding: 1px 6px;
+      background: rgba($Grey, .4);
+      border-radius: 4px;
+      margin-left: auto;
+    }
+
+    &-team-title {
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-logo {
+      width: 20px;
+      height: 20px;
+
+      margin-right: 14px;
+    }
+
+    &-container {
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: auto 380px;
+
+      padding: 20px;
+
+      background: $Dark;
+
+      border-bottom: solid 1px $Grey;
+
+      cursor: pointer;
+
+      transition: background-color 0.2s ease-in;
+
+      &:hover {
+        background: $DarkHovered;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    &-group {
+      display: flex;
+      flex-direction: column;
+
+      &__overflow-text {
+        display: inline-block;
+        max-width: calc(100% - 80px);
+
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      & > div {
+        &:first-child {
+          margin-bottom: 18px;
+        }
+      }
+
+      &-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        &-big {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start;
+
+          height: 48px;
+        }
+      }
+
+      &-3-text {
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    &-teams-grid {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(3, 1fr);
+
+      &--grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    &-favourite-icon {
+      display: inline-flex;
+
+      width: 20px;
+      height: 20px;
+
+      margin-right: 12px;
+
+      cursor: pointer;
+      transition: $transitionHover;
+
+      background-image: url('../img/favourite-icon.svg');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      &:hover {
+        opacity: .6;
+      }
+
+      &--active {
+        background-image: url('../img/favourite-icon--active.svg');
+      }
+    }
+
+    &-button {
+      height: 48px;
+      width: 100%;
+    }
+  }
+
+  &__more-btn {
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 50px;
+
+    background: rgba($Light, .05);
+
+    border-top: solid 1px $Grey;
+    border-radius: 0;
+
+    color: $Light;
+  }
+}
+
+@media(max-width: 1470px) {
+  .betting-events__game-container {
+    grid-template-columns: auto 280px;
+  }
+
+  .betting-events__game-button {
+    padding: 0 24px;
+  }
+}
+
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

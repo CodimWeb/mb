@@ -1,0 +1,24 @@
+.about-company-banner {
+  height: 400px;
+
+  background-image: url('../img/about-company/banner-desktop.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-bottom: solid 1px $Grey;
+}
+
+.about-company-banner__container {
+  height: 100%;
+  justify-content: flex-end;
+}
+
+@media(max-width: 576px) {
+  .about-company-banner {
+    height: 590px;
+
+    background-image: url('../img/about-company/about-company__banner-mobile.png');
+    background-position: center bottom;
+  }
+}

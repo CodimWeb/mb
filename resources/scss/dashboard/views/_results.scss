@@ -1,0 +1,132 @@
+.dashboard-results {
+  &__row {
+    grid-template-columns: auto 90px 90px 160px;
+
+    &>div {
+      &:last-child {
+        align-items: flex-end;
+      }
+    }
+  }
+
+  &__heading {
+    background: linear-gradient(90deg, rgba(68, 111, 221, 0.55) 0%, rgba(68, 111, 221, 0.11) 100%);
+  }
+
+  &__maran-icon {
+    margin-right: 10px;
+  }
+
+  &__line {
+    background: rgba($Light, 0.05);
+    border-top: solid 1px $Grey;
+
+    &>div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &-status {
+      padding: 2px 10px;
+      border-radius: 4px;
+      color: $Dark;
+
+      &--loose {
+        background: #ED6363;
+      }
+
+      &--win {
+        background: #38D75B;
+      }
+
+      &--in-progress {
+        background: #F3C211;
+      }
+    }
+  }
+}
+
+//@media(max-width: 1280px) {
+//  .dashboard-results {
+//    &__row {
+//      grid-template-columns: 380fr 160fr 210fr 105fr 160fr 140fr;
+//    }
+//  }
+//}
+
+@media(max-width: 768px) {
+  .dashboard-results__mobile{
+    &-coin {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+
+    &-status {
+      align-items: center;
+      justify-content: center;
+
+      padding: 2px 10px;
+
+      border-radius: 4px;
+
+      &--loose {
+        background: #ED6363;
+      }
+
+      &--win {
+        background: #38D75B;
+      }
+
+      &--in-progress {
+        background: $Yellow;
+        color: $Dark;
+      }
+    }
+
+    &-view {
+      width: 100%;
+      border: solid 1px $Grey;
+      background: rgba($Light, 0.05);
+      border-radius: 14px;
+      overflow:hidden;
+    }
+
+    &-item {
+      border-bottom: solid 1px $Grey;
+
+      &-col {
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        &-title {
+          margin-bottom: 6px;
+        }
+      }
+
+      &-row {
+        display: grid;
+        grid-template-columns: 3fr 2fr 3fr;
+
+        padding: 15px;
+
+        border-bottom: solid 1px $Grey;
+
+        &:first-child {
+          background: rgba($Light, .05);
+          border-bottom: none;
+        }
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        &>div {
+          align-items: flex-start;
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+}

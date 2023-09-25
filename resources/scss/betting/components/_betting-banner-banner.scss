@@ -1,0 +1,21 @@
+.betting-banner-mobile {
+  display: flex;
+  flex-direction: column;
+
+  background: #06081c;
+
+  padding-bottom: 30px;
+  border-bottom: solid 1px $Grey;
+}
+
+.betting-banner-mobile__image {
+  width: 100%;
+}
+
+.betting-banner-mobile__heading {
+  margin-bottom: 10px;
+}
+
+.betting-banner-mobile__description {
+  margin-bottom: 20px;
+}

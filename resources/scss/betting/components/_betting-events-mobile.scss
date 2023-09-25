@@ -1,0 +1,300 @@
+.betting-events-mobile {
+  margin-left: -15px;
+  width: calc(100% + 30px);
+
+  &__nothing {
+    width: calc(100% - 30px);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding: 25px 15px;
+    margin: 15px;
+
+    background: rgba($Light, .05);
+    border: solid 1px $LightGrey;
+    border-radius: 8px;
+  }
+
+  &__filters {
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 0 15px;
+
+    &-button {
+      padding: 12px 25px;
+      margin-right: 10px;
+
+      border: solid 1px $Grey;
+      border-radius: 8px;
+
+      background: rgba(217, 217, 217, 0.05);
+
+      user-select: none;
+      cursor: pointer;
+
+      &--active {
+        background: linear-gradient(90deg, rgba(68, 111, 221, 0.55) 0%, rgba(68, 111, 221, 0.11) 100%);
+      }
+    }
+  }
+
+  &__subcategory {
+    margin-bottom: 40px;
+  }
+
+  &__subcategory-title {
+    align-items: center;
+
+    width: 100%;
+    padding: 10px 15px;
+
+    background: linear-gradient(90deg, rgba(68, 111, 221, 0.55) 0%, rgba(68, 111, 221, 0.11) 100%);
+
+    &--live {
+      &::after {
+        content: '';
+
+        display: inline-block;
+
+        width: 6px;
+        height: 6px;
+
+        margin-left: 8px;
+
+        border-radius: 50%;
+        background: #AC1414;
+      }
+    }
+  }
+
+  &__champ-title {
+    padding: 10px 12px;
+    background: rgba(217, 217, 217, 0.05);
+    border-bottom: solid 1px $Grey;
+
+    &--loading {
+      justify-content: flex-start;
+      align-items: center;
+
+      height: 44px;
+
+      &::before {
+        content: '';
+        display: block;
+
+        width: 190px;
+        height: 10px;
+
+        background: $Grey;
+
+        border-radius: 4px;
+
+        opacity: .4;
+      }
+    }
+  }
+
+  &__game {
+    &-container {
+      padding: 15px 20px;
+      border-bottom: solid 1px $Grey;
+    }
+
+    &-grid {
+      display: grid;
+      grid-gap: 15px;
+      grid-template-columns: auto 32px;
+
+      &>.flex-column {
+        overflow: hidden;
+      }
+    }
+
+    &-grid-2 {
+      display: grid;
+      grid-gap: 12px;
+      grid-template-columns: repeat(3, 1fr);
+
+      margin-top: 14px;
+
+      &--half {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      &>.flex-column {
+        overflow: hidden;
+      }
+    }
+
+    &-favourite-icon {
+      margin-right: 0;
+      margin-left: auto;
+
+      width: 21px;
+      height: 21px;
+    }
+
+    &-button {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 0;
+      height: 48px;
+
+      &--left-part,
+      &--right-part {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 100%;
+      }
+
+      &--left-part {
+        width: 46px;
+        padding: 0 14px;
+        border-right: solid 1px $Grey;
+      }
+
+      &--right-part {
+        width: 100%;
+      }
+
+      &.button-action-02--active {
+        &--left-part {
+          border-right-color: $Yellow2;
+        }
+      }
+    }
+  }
+
+  &__date {
+    margin-bottom: 8px;
+    opacity: .6;
+
+    &--loading {
+      height: 21px;
+      opacity: 1;
+
+      &::before {
+        content: '';
+        display: block;
+
+        width: 100px;
+        height: 10px;
+
+        background: $Grey;
+        border-radius: 4px;
+
+        opacity: .4;
+      }
+    }
+  }
+
+  &__teams {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    &--loading {
+      &::before {
+        content: '';
+        display: block;
+
+        width: 140px;
+        height: 10px;
+
+        background: $Grey;
+        border-radius: 4px;
+
+        opacity: .4;
+      }
+    }
+
+    &-logo {
+      display: inline-flex;
+
+      width: 16px;
+      height: 16px;
+
+      margin: 0 3px;
+    }
+  }
+
+  &__loading-star {
+    display: flex;
+
+    width: 21px;
+    height: 21px;
+
+    background-image: url('../img/loading-star.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__loading-button {
+    display: grid;
+    grid-template-columns: 46px auto;
+
+    width: 100%;
+    height: 48px;
+
+    background: rgba($Light, .05);
+
+    border: solid 1px $Grey;
+    border-radius: 8px;
+
+    &--left,
+    &--right {
+      justify-content: center;
+      align-items: center;
+
+      &::before {
+        content: '';
+        display: block;
+
+        height: 10px;
+
+        background: $Grey;
+
+        border-radius: 4px;
+
+        opacity: .4;
+      }
+    }
+
+    &--left {
+      border-right: solid 1px $Grey;
+
+      &::before {
+        width: 22px;
+      }
+    }
+
+    &--right {
+      &::before {
+        width: 38px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+.dashboard-nav-mobile {
+  position: fixed;
+
+  left: 0;
+  top: 80px;
+
+  width: 100%;
+  height: calc(100vh - 80px);
+
+  background: $Dark;
+
+  z-index: 9;
+
+  &__list {
+    width: 100%;
+
+    margin: 40px 0 30px;
+  }
+
+  &__item {
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__language-switcher {
+    align-items: center;
+
+    cursor: pointer;
+    user-select: none;
+  }
+
+  &__language-flag {
+    margin-right: 10px;
+
+    width: 30px;
+    height: 30px;
+  }
+}

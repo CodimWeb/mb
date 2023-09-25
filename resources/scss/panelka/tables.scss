@@ -1,0 +1,14 @@
+.panelka__table {
+  @extend .flex-column;
+}
+
+.panelka__table-row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding:10px 0;
+  border-bottom: solid 1px $Grey;
+
+  &>div {
+    align-items: center;
+  }
+}

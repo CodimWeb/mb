@@ -1,0 +1,290 @@
+.h1 {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 130%;
+}
+
+.h2 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 130%;
+}
+
+.h3_semibold {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 140%;
+}
+
+.h3_medium {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 140%;
+}
+
+.h4_bold {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 160%;
+}
+
+.h4_medium {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 160%;
+}
+
+.h4_regular {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+}
+
+.t1_semibold {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.t1_medium {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.t1_regular {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+.t2_regular {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.t2_semibold {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.t2_medium {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.t3_regular {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+}
+
+@media(max-width: 1280px) {
+  .t1_semibold,
+  .t1_medium,
+  .t1_regular {
+    font-size: 15px;
+  }
+
+  .t2_regular,
+  .t2_semibold,
+  .t2_medium {
+    font-size: 13px;
+  }
+}
+
+@media(max-width: 992px) {
+  .h1,
+  .h1_m {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+  }
+
+  .h2,
+  .h2_m {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 130%;
+  }
+
+  .h3_semibold,
+  .h3_semibold_m {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+  }
+
+  .h3_medium,
+  .h3_medium_m {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+  }
+
+  .h4_bold,
+  .h4_bold_m {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 160%;
+  }
+
+  .h4_medium,
+  .h4_medium_m {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+  }
+
+  .h4_regular,
+  .h4_regular_m {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+  }
+
+  .t1_semibold,
+  .t1_semibold_m {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  .t1_medium,
+  .t1_medium_m {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .t1_regular,
+  .t1_regular_m {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  .t2_semibold,
+  .t2_semibold_m {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .t2_medium,
+  .t2_medium_m {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .t2_regular,
+  .t2_regular_m {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+
+@media(max-width: 767px) {
+  .h1, .h1_m {
+    font-size: 30px;
+    line-height: 130%;
+  }
+}
+
+@media(max-width: 400px) {
+  .h1,
+  .h1_m {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 130%;
+  }
+
+  .h2,
+  .h2_m {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 130%;
+  }
+
+  .h3_semibold,
+  .h3_semibold_m {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+  }
+
+  .h3_medium,
+  .h3_medium_m {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+  }
+
+  .h4_bold,
+  .h4_bold_m {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  .h4_medium,
+  .h4_medium_m {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  .h4_regular,
+  .h4_regular_m {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  .t1_semibold,
+  .t1_semibold_m {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .t1_medium,
+  .t1_medium_m {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  .t1_regular,
+  .t1_regular_m {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+  }
+
+  .t2_semibold,
+  .t2_semibold_m {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 140%;
+  }
+
+  .t2_medium,
+  .t2_medium_m {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 140%;
+  }
+
+  .t2_regular,
+  .t2_regular_m {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+  }
+}

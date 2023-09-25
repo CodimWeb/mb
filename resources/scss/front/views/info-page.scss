@@ -1,0 +1,37 @@
+.info-page {
+  margin: 70px 0 0;
+  padding: 80px 0;
+}
+
+.info-page__heading {
+  margin-bottom: 30px;
+}
+
+.info-page__content {
+  p {
+    margin-bottom: 20px;
+  }
+
+  ul,
+  ol {
+    margin-bottom: 20px;
+    margin-left: 30px;
+
+    li {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+}

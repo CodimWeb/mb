@@ -1,0 +1,21 @@
+.results-page-left-column {
+  &__item {
+    width: 100%;
+    height: 44px;
+
+    align-items: center;
+
+    background: rgba(217, 217, 217, 0.05);
+
+    border: solid 1px $Grey;
+    border-radius: 14px;
+
+    margin-bottom: 5px;
+
+    padding: 0 9px;
+
+    &.router-link-exact-active {
+      background: linear-gradient(90deg, rgba(68, 111, 221, 0.55) 0%, rgba(68, 111, 221, 0.11) 100%);
+    }
+  }
+}

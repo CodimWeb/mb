@@ -1,0 +1,12 @@
+a {
+  color: $Light;
+  transition: $transitionHover;
+
+  &:hover {
+    color: $Yellow2;
+  }
+
+  &:active {
+    color: $Yellow3;
+  }
+}

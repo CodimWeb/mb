@@ -1,0 +1,30 @@
+<svg width="1616" height="698" viewBox="0 0 1616 698" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.7" filter="url(#filter0_f_81_2087)">
+<path d="M1217.2 248.324C977.878 301.006 817.532 274.665 638.04 217.194C554.277 192.544 575.816 279.454 638.04 401.58C700.264 523.706 958.733 583.572 1111.9 614.702C1265.07 645.832 1176.52 447.078 1289 418.343C1401.48 389.607 1511.57 593.15 1533.11 497.365C1554.65 401.58 1456.52 195.643 1217.2 248.324Z" fill="url(#paint0_radial_81_2087)"/>
+</g>
+<g style="mix-blend-mode:screen" opacity="0.6" filter="url(#filter1_f_81_2087)">
+<path d="M897 613C898.036 589.772 868.76 492.747 737 437C574.498 368.246 289 337 260.614 91.3073C10.8454 23.6237 78.4359 277.454 199.63 384.302C296.585 469.781 779.95 577.384 897 613Z" fill="url(#paint1_radial_81_2087)"/>
+</g>
+<defs>
+<filter id="filter0_f_81_2087" x="503" y="133" width="1113" height="565" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="40" result="effect1_foregroundBlur_81_2087"/>
+</filter>
+<filter id="filter1_f_81_2087" x="11" y="0" width="966.026" height="693" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="40" result="effect1_foregroundBlur_81_2087"/>
+</filter>
+<radialGradient id="paint0_radial_81_2087" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1086.62 390.148) rotate(90) scale(177.148 496.113)">
+<stop stop-color="#525F8C"/>
+<stop offset="0.557292" stop-color="#1D254E"/>
+<stop offset="1" stop-color="#06081C"/>
+</radialGradient>
+<radialGradient id="paint1_radial_81_2087" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(398.033 306.575) rotate(90) scale(226.575 302.457)">
+<stop stop-color="#525F8C"/>
+<stop offset="0.557292" stop-color="#1D254E"/>
+<stop offset="1" stop-color="#06081C"/>
+</radialGradient>
+</defs>
+</svg>

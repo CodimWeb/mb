@@ -1,0 +1,77 @@
+.betting-mobile-nav {
+  position: fixed;
+
+  left: 0;
+  top: 80px;
+
+  width: 100%;
+  height: calc(100vh - 80px);
+
+  background-color: $Dark;
+  background-image: url('../img/betting-mobile-nav__background.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: 18;
+
+  &__divider {
+    margin: 0 0 25px;
+    height: 1px;
+    background: rgba(white, .1);
+  }
+}
+
+.betting-mobile-nav__container {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.betting-mobile-nav__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-bottom: 25px;
+
+  &.router-link-active {
+    color: $Yellow;
+  }
+}
+
+/* languages */
+.betting-mobile-nav__language-switcher-btn {
+  align-items: center;
+
+  margin-top: 8px;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.betting-mobile-nav__language-flag {
+  display: inline-flex;
+
+  width: 30px;
+  height: 30px;
+
+  margin-right: 10px;
+}
+
+.betting-mobile-nav__language-panel {
+  position: fixed;
+
+  left: 0;
+  top: 80px;
+
+  width: 100%;
+  height: calc(100% - 80px);
+
+  background-color: $Dark;
+  background-image: url('../img/betting-mobile-nav__background.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: 19;
+}

@@ -1,0 +1,22 @@
+.auth-pages-error {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  margin-bottom: 25px;
+
+  padding: 12px 25px;
+
+  background: #BD2929;
+  border: solid 1px #801717;
+  border-radius: 8px;
+
+  li {
+    margin-bottom: 4px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+button,
+input,
+textarea,
+select,
+a {
+  outline: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  width: 1200px;
+  max-width: calc(100% - 30px);
+
+  margin: 0 auto;
+}
+
+.container-fw {
+  width: calc(100% - 30px);
+  max-width: 1980px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media(max-width: 576px) {
+  .v-toast__text {
+    font-size: 14px;
+  }
+}

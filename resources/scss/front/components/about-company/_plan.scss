@@ -1,0 +1,159 @@
+.about-company-plan {
+  padding-bottom: 100px;
+
+  background-image: url("../img/about-company/map-background.png");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__heading {
+    margin-bottom: 60px;
+  }
+
+  &__item {
+    padding: 20px 30px;
+    margin-bottom: 15px;
+
+    background: rgba(217, 217, 217, 0.05);
+
+    border: solid 1px $Grey;
+    border-radius: 14px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item-grid {
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: 150fr 600fr 50px;
+
+    cursor: pointer;
+    user-select: none;
+
+    &>div {
+      @extend .flex-column;
+      justify-content: center;
+    }
+  }
+
+  &__date {
+    opacity: .6;
+  }
+
+  &__icon-box {
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  &__icon {
+    position: relative;
+    display: block;
+
+    width: 50px;
+    height: 50px;
+
+    background: $Dark;
+
+    border: solid 1px $LightGrey;
+    border-radius: 50%;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      background: $Light;
+    }
+
+    &::before {
+      width: 1px;
+      height: 19.64px;
+
+      left: 24px;
+      top: 15.18px;
+    }
+
+    &::after {
+      width: 19.64px;
+      height: 1px;
+
+      left: 14.5px;
+      top: 24px;
+    }
+  }
+
+  &__item-response {
+    padding-right: 50px;
+    margin-top: 15px;
+    opacity: .6;
+  }
+
+  &__expander-container {
+    min-width: 3rem;
+    display: flex;
+    align-items: center;
+
+    .about-company-plan__expander {
+      width: 100%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      border: 1px solid $Grey;
+      position: relative;
+      background-color: $Dark;
+      cursor: pointer;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        background: white;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+      }
+
+      &::before {
+        width: 1px;
+        height: 40%;
+      }
+
+      &::after {
+        width: 40%;
+        height: 1px;
+      }
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .about-company-plan {
+    &__item {
+      padding: 20px;
+    }
+
+    &__item-grid {
+      grid-template-columns: auto 42px;
+
+      &>div {
+        &:first-child {
+          grid-column: 1 / span 2;
+        }
+      }
+    }
+
+    &__icon {
+      width: 42px;
+      height: 42px;
+
+      &::before {
+        left: 19.5px;
+        top: 11px;
+      }
+
+      &::after {
+        left: 10.5px;
+        top: 20.5px;
+      }
+    }
+  }
+}

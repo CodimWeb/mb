@@ -1,0 +1,75 @@
+.betting-tablets-categories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  height: auto;
+
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  width: 100%;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+
+  scrollbar-width: thin;
+  scrollbar-color: $Grey $Yellow;
+
+  &::-webkit-scrollbar {
+    height: 6px;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $Grey;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $Yellow;
+    border-radius: 4px;
+    border: 1px solid transparent;
+  }
+}
+
+.betting-tablets-categories__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  margin-right: 30px;
+
+  opacity: .6;
+
+  transition: $transitionHover;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    opacity: 1;
+    color: $Light;
+  }
+
+  &.router-link-active {
+    opacity: 1;
+  }
+}
+
+@media(max-width: 768px) {
+  .betting-tablets-categories__item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

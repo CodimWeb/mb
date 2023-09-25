@@ -1,0 +1,33 @@
+.auth-header {
+  position: absolute;
+
+  left:0;
+  top: 0;
+
+  width: 100%;
+  height: auto;
+}
+
+.auth-header__container {
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 0;
+}
+
+.auth-header__logo {
+  height: 34px;
+  width: auto;
+}
+
+.auth-header__back {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+
+  svg {
+    margin-right: 2px;
+  }
+}

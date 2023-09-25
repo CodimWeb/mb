@@ -1,0 +1,264 @@
+.buy-currency {
+  display: flex;
+  flex-direction: column;
+
+  padding-bottom: 100px;
+
+  //background-size: auto 100%;
+  //background-position: center;
+  //background-repeat: no-repeat;
+  //background-image: url('../img/buy-background.svg');
+
+  &__container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__heading {
+    margin-bottom: 55px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+
+    width: 680px;
+
+    margin: 0 auto;
+  }
+
+  &__item {
+    align-items: center;
+
+    padding: 40px 20px;
+
+    background: rgba(217, 217, 217, 0.05);
+    border: 1px solid $Grey;
+    border-radius: 14px;
+
+    &-title {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    &-show-all {
+      color: $Yellow;
+      margin-bottom: 20px;
+
+      cursor: pointer;
+      user-select: none;
+    }
+
+    &-layer-1,
+    &-layer-2 {
+      min-height: 375px;
+    }
+
+    &-layer-1 {
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    &-layer-2 {
+      align-items: center;
+      height: 290px;
+      width: 100%;
+      overflow-y: auto;
+      margin-bottom: 20px;
+
+      &-title {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
+
+  &__currencies-row {
+    justify-content: space-between;
+    align-items: center;
+
+    width: 240px;
+
+    margin-bottom: 15px;
+  }
+
+  &__target {
+    width: 100%;
+
+    justify-content: space-between;
+    align-items: center;
+
+    border: solid 1px rgba($Light, .4);
+    border-radius: 18px;
+
+    &-item {
+      flex: auto;
+      justify-content: center;
+
+      padding: 8px 15px;
+
+      &:first-child {
+        border-right: solid 1px rgba($Light, .1);
+      }
+    }
+  }
+
+  &__list {
+    justify-content: center;
+    align-items: center;
+
+    margin: 15px auto 40px;
+
+    &-item {
+      justify-content: center;
+      align-items: center;
+
+      padding: 11px 16px;
+      margin: 0 6px;
+
+      min-height: 48px;
+
+      border: solid 1px rgba($Light, .1);
+      border-radius: 24px;
+    }
+  }
+
+  &__currencies-title {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin-top: 30px;
+    width: 100%;
+
+    &--layer-2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      height: 25px;
+    }
+  }
+
+  &__icon {
+    margin: 0 auto 20px;
+    width: 100px;
+    height: 100px;
+  }
+
+  &__coin {
+    margin-right: 8px;
+  }
+
+  &__button {
+    margin-top: auto;
+    width: 210px;
+  }
+
+  //&__mt {
+  //  margin-top: 44px;
+  //}
+}
+
+.buy-currency__banner {
+  margin: 120px 0;
+  text-align: center;
+
+}
+
+.buy-currency__banner img {
+  height: auto;
+  min-height: 320px;
+  object-fit: cover;
+}
+
+
+@media(max-width: 920px) {
+
+  .buy-currency {
+    padding-bottom: 0;
+  }
+
+  .buy-currency__grid {
+    width: 100%;
+    grid-gap: 15px;
+  }
+}
+
+@media(max-width: 780px) {
+  .buy-currency__item {
+    padding: 40px;
+  }
+
+  .buy-currency__banner {
+    margin: 30px 0;
+  }
+}
+
+@media(max-width: 720px) {
+  .buy-currency__item {
+    padding: 30px;
+  }
+}
+
+@media(max-width: 670px) {
+  .buy-currency__item {
+    padding: 20px;
+  }
+}
+
+@media(max-width: 640px) {
+  .buy-currency {
+    padding-bottom: 0;
+
+    &__container {
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    &__grid {
+      grid-template-columns: 1fr;
+      grid-gap: 30px;
+    }
+
+    &__heading {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    &__item {
+      padding: 40px 15px;
+
+      &-title {
+        margin-bottom: 32px;
+      }
+    }
+
+    &__pair-group,
+    &__button {
+      justify-content: center;
+
+      width: 260px;
+      max-width: 100%;
+    }
+  }
+}
+
+.buy-currency__currencies-row-new {
+  justify-content: center;
+}
+
+.buy-currency__list-item-new {
+  width: 120px;
+}
+
+.buy-currency__list-item-new .buy-currency__coin {
+  width: 32px;
+  height: 32px;
+}
+
+.buy-currency__coin-name {
+  min-width: 45px;
+}

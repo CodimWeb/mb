@@ -1,0 +1,52 @@
+.dashboard-header {
+  position: fixed;
+
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: auto;
+
+  z-index: 4;
+
+  background: $Dark;
+
+  border-bottom: solid 1px $Grey;
+}
+
+.dashboard-header__container {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  height: 70px;
+  max-width: 100%;
+}
+
+.dashboard-header__button-exit,
+.dashboard-header__button-user {
+  justify-content: flex-end;
+  align-items: center;
+
+  margin-left: 30px;
+}
+
+.dashboard-header__button-exit {
+  cursor: pointer;
+  user-select: none;
+
+  &::after {
+    content: '';
+
+    display: inline-block;
+
+    width: 24px;
+    height: 24px;
+
+    margin-left: 8px;
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../img/icon-logout.svg');
+  }
+}

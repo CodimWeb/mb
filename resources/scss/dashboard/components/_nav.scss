@@ -1,0 +1,114 @@
+.dashboard-nav {
+  position: fixed;
+  left: 0;
+  top: 75px;
+  height: calc(100vh - 75px);
+  width: 250px;
+
+  justify-content: space-between;
+  border-right: solid 1px $Grey;
+
+  min-height: calc(100vh - 70px);
+
+  z-index: 3;
+}
+
+.dashboard-nav__balance {
+  padding: 9px 30px;
+  border-bottom: solid 1px $Grey;
+}
+
+.dashboard-nav__balance-text {
+  opacity: .6;
+  margin-bottom: 3px;
+}
+
+.dashboard-nav__balance-value {
+  &::before {
+    content: '';
+    display: inline-flex;
+
+    width: 32px;
+    height: 32px;
+
+    margin-right: 8px;
+
+    background-image: url('../img/currencies/maran.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.dashboard-nav__item {
+  align-items: center;
+  padding: 6px 30px;
+  border-bottom: solid 1px $LightGrey;
+  user-select: none;
+
+  transition: $transitionHover;
+
+  &.router-link-exact-active {
+    background: linear-gradient(90deg, rgba(68, 111, 221, 0.55) 0%, rgba(68, 111, 221, 0.11) 100%);
+  }
+}
+
+.dashboard-nav__icon {
+  display: inline-flex;
+
+  width: 32px;
+  height: 32px;
+
+  margin-right: 9px;
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.dashboard-nav__icon-wallet {
+  background-image: url('../img/dashboard-icons/wallet.svg');
+}
+
+.dashboard-nav__icon-history {
+  background-image: url("../img/dashboard-icons/history.svg");
+}
+
+.dashboard-nav__icon-help {
+  background-image: url("../img/dashboard-icons/help.svg");
+}
+
+.dashboard-nav__icon-results {
+  background-image: url("../img/dashboard-icons/results.svg");
+}
+
+.dashboard-nav__icon-favorites {
+    background-image: url("../img/dashboard-icons/favorites.svg");
+  }
+
+.dashboard-nav__icon-telegram {
+  background-image: url("../img/dashboard-icons/help-telegram.svg");
+}
+
+.dashboard-nav__back {
+  font-size: 15px;
+  align-items: center;
+  margin-top: auto;
+  user-select: none;
+  padding: 20px 30px;
+  border-top: solid 1px $Grey;
+
+  &::before {
+    content: '';
+
+    width: 16px;
+    height: 16px;
+
+    margin-right: 7px;
+
+    background-image: url('../img/dashboard-icons/back.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

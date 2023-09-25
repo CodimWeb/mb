@@ -1,0 +1,19 @@
+.panelka-main {
+  &__item {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.chart-row {
+  display: flex;
+  margin: 0 -15px;
+}
+
+.chart-column {
+  width: 50%;
+  padding: 0 15px;
+}

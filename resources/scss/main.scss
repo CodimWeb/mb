@@ -1,0 +1,84 @@
+// Front Page
+@import 'ui/ui';
+@import 'front/views/front-page';
+@import 'front/components/header';
+@import 'front/components/header-mobile';
+@import 'front/components/header-mobile-nav';
+@import 'front/components/banner-front';
+@import 'front/components/fast-start';
+@import 'front/components/disciplines';
+@import 'front/components/banner-web3';
+@import 'front/components/advantages';
+@import 'front/components/cryptocurrencies';
+@import 'front/components/powered-by';
+@import 'front/components/buy-currency';
+@import 'front/components/faq';
+@import 'front/components/footer';
+
+// Maran token page
+@import 'front/views/maran-token-page';
+
+// About company page
+@import 'front/views/about-company';
+@import 'front/components/about-company/banner';
+@import 'front/components/about-company/mission';
+@import 'front/components/about-company/security';
+@import 'front/components/about-company/advantages';
+@import 'front/components/about-company/participation';
+@import 'front/components/about-company/plan';
+
+// Info page
+@import 'front/views/info-page';
+
+// Sales Category
+@import 'front/views/sales-category';
+@import 'front/views/sales-item';
+
+// Auth pages
+@import 'auth/auth';
+@import 'auth/components/errors';
+@import 'auth/components/header';
+
+// Betting pages
+@import 'betting/views/betting';
+@import 'betting/components/header';
+@import 'betting/components/header-mobile';
+@import 'betting/components/betting-mobile-nav';
+@import 'betting/components/betting-banner';
+@import 'betting/components/betting-banner-banner';
+@import 'betting/components/betting-grid';
+@import 'betting/components/betting-search';
+@import 'betting/components/betting-categories';
+@import 'betting/components/betting-countries';
+@import 'betting/components/betting-events';
+@import 'betting/components/betting-events-mobile';
+@import 'betting/components/betting-coupons';
+@import 'betting/components/betting-coupons-mobile';
+@import 'betting/components/betting-tablets-categories';
+
+// Results pages
+@import 'results/views/results';
+@import 'results/components/left-column';
+@import 'results/components/events';
+
+// Dashboard
+@import 'dashboard/views/dashboard';
+@import 'dashboard/components/header';
+@import 'dashboard/components/header-mobile';
+@import 'dashboard/components/nav-mobile';
+@import 'dashboard/components/nav';
+@import 'dashboard/components/empty';
+@import 'dashboard/components/dashboard-pagination';
+
+@import 'dashboard/views/main';
+@import 'dashboard/views/history';
+@import 'dashboard/views/help';
+@import 'dashboard/views/results';
+
+// dashboard popups
+@import 'dashboard/components/withdraw-funds';
+@import 'dashboard/components/add-funds';
+
+// panelka
+@import 'panelka/main';
+@import 'panelka/tables';

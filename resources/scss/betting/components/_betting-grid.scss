@@ -1,0 +1,53 @@
+.betting-grid {
+  display: flex;
+  flex-direction: column;
+
+  margin: 30px 0;
+}
+
+.betting-grid__container {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 324px 1.5fr 1fr;
+}
+
+.betting-esports-grid__container {
+  display: grid;
+  grid-gap: 30px;
+}
+
+@media(max-width: 1490px) {
+  .betting-grid__container {
+    grid-template-columns: 270px auto 320px;
+  }
+}
+
+@media(max-width: 1370px) {
+  .betting-grid__container {
+    grid-gap: 20px;
+  }
+}
+
+@media(max-width: 1320px) {
+  .betting-grid__container {
+    grid-template-columns: 230px auto 320px;
+  }
+}
+
+@media(max-width: 1280px) {
+  .betting-grid__container {
+    grid-template-columns: auto 320px;
+  }
+}
+
+@media(max-width: 992px) {
+  .betting-grid__container {
+    grid-template-columns: 100%;
+  }
+}
+
+@media(max-width: 576px) {
+  .betting-grid {
+    margin: 20px 0;
+  }
+}

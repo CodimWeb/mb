@@ -1,0 +1,218 @@
+.betting-coupons-mobile__window-buttons,
+.betting-coupons-mobile__static-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0;
+
+  height: 61px;
+}
+
+.betting-coupons-mobile__coupon-container {
+  position: fixed;
+  transform: translateY(-50%);
+  left: 0;
+  top: 50%;
+  width: 100%;
+  min-height: 30rem;
+  z-index: 20;
+  // background: white;
+  padding: 1rem;
+
+  .betting-coupon-mobile-wrapper {
+    background: $Dark;
+    position: relative;
+    border: 1px solid $Grey;
+    border-radius: 1rem;
+    padding: 1rem;
+    padding-top: 3rem;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 20px 5px rgba(10, 10, 15, 0.8);
+  }
+
+  .betting-coupon-mobile-wrapper__closer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0.85rem;
+    height: 0.85rem;
+    background-image: url('../img/icon-close.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 1rem;
+  }
+}
+
+.betting-coupon-mobile__event-info-teams {
+  display: flex;
+}
+
+.betting-coupon-mobile__event-info-team {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .event-info-team__name {
+    font-size: 0.75rem;
+  }
+}
+
+.betting-coupon-mobile__event-info-match__team-logo {
+  margin-top: 1rem;
+}
+
+.betting-coupon-mobile__event-info-match__team-logo img {
+  width: 40px;
+}
+
+.betting-coupon-mobile__event-info-match__center {
+  margin-top: 1.5rem;
+}
+
+.betting-coupon-mobile__event-info-match-time {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.betting-coupon-mobile__event-info-match-date {
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: $LightGrey;
+  margin-top: 0.75rem;
+}
+
+.betting-coupon-mobile__event-info-match-timer {
+  margin-top: 0.5rem;
+  color: $LightGrey;
+}
+
+.betting-coupon-mobile__event-info-match-score {
+  margin-top: 0.8rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.betting-coupon-mobile__event-bets {
+  background: rgba(217, 217, 217, 0.05);
+  border: 1px solid $Grey;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.betting-coupon-mobile__event-bets__results {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.betting-coupon-mobile__event-bets__results__section {
+  &.team {
+    flex: 1;
+
+    & img {
+      width: 1.5rem;
+    }
+  }
+  &.last_results {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+  }
+  &.points {
+    flex: 1;
+  }
+}
+
+
+
+
+
+.betting-coupons-mobile__static-buttons {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 18;
+  border-top: solid 1px $Grey;
+}
+
+.betting-button-mobile__control-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  height: 60px;
+
+  background: $Dark;
+  color: $Light;
+
+  user-select: none;
+  cursor: pointer;
+
+  transition: $transitionHover;
+
+  &:first-child {
+    border-right: solid 1px $Grey;
+  }
+}
+
+.betting-button-mobile__control-btn--active {
+  background: linear-gradient(90deg, rgba(68, 111, 221, 0.55) 0%, rgba(68, 111, 221, 0.11) 100%);
+}
+
+.betting-coupons-mobile__container {
+  position: fixed;
+
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  padding-bottom: 54px;
+
+  background: $Dark;
+
+  z-index: 41;
+}
+
+.betting-coupons-mobile__tab {
+  overflow-y: auto;
+  max-height: calc(100vh - 60px);
+}
+
+.betting-coupons-mobile__window-buttons {
+  border-bottom: solid 1px $Grey;
+}
+
+.betting-coupons-mobile__hide-btn {
+  position: fixed;
+
+  justify-content: center;
+  align-items: center;
+
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 54px;
+
+  background: $Dark;
+
+  color: $Light;
+
+  user-select: none;
+  cursor: pointer;
+
+  z-index: 42;
+}
+
+.betting-coupons-mobile__hide-icon {
+  margin-left: 4px;
+}

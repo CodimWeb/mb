@@ -1,0 +1,60 @@
+.web3-banner__image {
+	width: 100%;
+	height: auto;
+	min-height: 320px;
+	object-fit: cover;
+}
+
+.web3-banner__content {
+	text-align: center;
+	margin-top: 55px;
+}
+
+.web3-banner__text {
+	font-size: 35px;
+	line-height: 160%;
+	color: #EDEEF6;
+	margin-top: 25px;
+
+	span {
+		font-weight: 700;
+	}
+}
+
+@media(max-width: 767px) {
+	.mobile-reverse {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.web3-banner__image {
+		min-height: 250px;
+		max-height: 250px;
+	}
+
+	.web3-banner__content {
+		margin-top: 30px;
+	}
+
+	.betting-button-icon {
+		height: 47px;
+		padding: 0 10px;
+		font-size: 16px;
+	}
+
+	.betting-button-icon img {
+		width: 32px;
+		height: 32px;
+		margin-top: 0;
+	}
+
+	.web3-banner__text {
+		margin-top: 20px;
+		font-size: 16px;
+	}
+
+	.web3-banner__text span {
+		display: inline-block;
+		margin-bottom: 14px;
+	}
+}

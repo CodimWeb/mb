@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[695],{4695:(e,t,n)=>{n.r(t),n.d(t,{default:()=>s});var c=n(1385),r={class:"betting-page betting-category"};const a={},s=(0,n(3744).Z)(a,[["render",function(e,t){return(0,c.openBlock)(),(0,c.createElementBlock)("div",r," BettingCategory ")}]])}}]);

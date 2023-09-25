@@ -1,0 +1,87 @@
+.betting-countries__panel {
+    margin: 15px 0;
+}
+
+.country-collapse__btn {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-right: 34px;
+    cursor: pointer;
+    padding-left: 14px;
+}
+
+.betting-categories__flag {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 14px;
+
+    img {
+        width: 22px;
+        height: 22px;
+        object-fit: cover;
+    }
+}
+
+.country-collapse__title {
+    color: #EDEEF6;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.country-collapse__title-quantity {
+    position: absolute;
+    top: 50%;
+    right: 55px;
+    transform: translateY(-50%);
+    font-size: 13px;
+    color: #7e8da0;
+}
+
+.country-collapse__arrow {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%) rotateZ(-90deg);
+    margin-top: 1px;
+}
+
+.country-collapse__wrap {
+    padding-bottom: 8px;
+}
+
+.country-collapse__body {
+    padding: 18px 0 0 16px;
+    max-height: 283px;
+    overflow: hidden;
+}
+
+.country-collapse__body.open {
+    max-height: fit-content;
+}
+
+.country-collapse__link {
+    display: block;
+    font-size: 11px;
+    line-height: 1.5;
+    margin-bottom: 13px;
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        color: #F3C211;
+    }
+}
+
+.country-collapse__show-all {
+    margin-left: 16px;
+}
+
+.country-collapse.open .country-collapse__arrow {
+    transform: translateY(-50%) rotateZ(0);
+}

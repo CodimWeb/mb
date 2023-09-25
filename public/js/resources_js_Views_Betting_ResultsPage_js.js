@@ -1,0 +1,13 @@
+(self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_js_Views_Betting_ResultsPage_js"],{
+
+/***/ "./resources/js/Views/Betting/ResultsPage.js":
+/*!***************************************************!*\
+  !*** ./resources/js/Views/Betting/ResultsPage.js ***!
+  \***************************************************/
+/***/ (() => {
+
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\OpenServer\\domains\\maran-new.loc\\resources\\js\\Views\\Betting\\ResultsPage.js: Support for the experimental syntax 'jsx' isn't currently enabled (1:1):\n\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 1 |\u001b[39m \u001b[33m<\u001b[39m\u001b[33mtemplate\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m   |\u001b[39m \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 2 |\u001b[39m     \u001b[33m<\u001b[39m\u001b[33mdiv\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m\"results-page\"\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 3 |\u001b[39m         \u001b[0m\n\u001b[0m \u001b[90m 4 |\u001b[39m     \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mdiv\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\nAdd @babel/preset-react (https://git.io/JfeDR) to the 'presets' section of your Babel config to enable transformation.\nIf you want to leave it as-is, add @babel/plugin-syntax-jsx (https://git.io/vb4yA) to the 'plugins' section to enable parsing.\n    at Parser._raise (C:\\OpenServer\\domains\\maran-new.loc\\node_modules\\@babel\\parser\\lib\\index.js:506:17)\n    at Parser.raiseWithData (C:\\OpenServer\\domains\\maran-new.loc\\node_modules\\@babel\\parser\\lib\\index.js:499:17)\n    at Parser.expectOnePlugin (C:\\OpenServer\\domains\\maran-new.loc\\node_modules\\@babel\\parser\\lib\\index.js:3730:18)\n    at Parser.parseExprAtom (C:\\OpenServer\\domains\\maran-new.loc\\node_modules\\@babel\\parser\\lib\\index.js:12416:18)\n    at Parser.parseExprSubscripts (C:\\OpenServer\\domains\\maran-new.loc\\node_modules\\@babel\\parser\\lib\\index.js:11999:23)\n    at Parser.parseUpdate (C:\\OpenServer\\domains\\maran-new.loc\\node_modules\\@babel\\parser\\lib\\index.js:11979:21)\n    at Parser.parseMaybeUnary (C:\\OpenServer\\domains\\maran-new.loc\\node_modules\\@babel\\parser\\lib\\index.js:11954:23)\n    at Parser.parseMaybeUnaryOrPrivate (C:\\OpenServer\\domains\\maran-new.loc\\node_modules\\@babel\\parser\\lib\\index.js:11751:61)\n    at Parser.parseExprOps (C:\\OpenServer\\domains\\maran-new.loc\\node_modules\\@babel\\parser\\lib\\index.js:11758:23)\n    at Parser.parseMaybeConditional (C:\\OpenServer\\domains\\maran-new.loc\\node_modules\\@babel\\parser\\lib\\index.js:11728:23)");
+
+/***/ })
+
+}]);

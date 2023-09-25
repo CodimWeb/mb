@@ -1,0 +1,36 @@
+.fui-social {
+  display: inline-flex;
+
+  width: 36px;
+  height: 36px;
+
+  background-color: #060B1C;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border: solid 1px $LightGrey;
+  border-radius: 50%;
+
+  transition: $transitionHover;
+
+  &:hover {
+    border-color: $Yellow;
+  }
+}
+
+.fui-vk {
+  background-image: url('../img/socials/vk.svg');
+}
+
+.fui-facebook {
+  background-image: url('../img/socials/facebook.svg');
+}
+
+.fui-instagram {
+  background-image: url('../img/socials/instagram.svg');
+}
+
+.fui-telegram {
+  background-image: url('../img/socials/telegram.svg');
+}

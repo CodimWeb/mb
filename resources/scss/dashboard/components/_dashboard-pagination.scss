@@ -1,0 +1,18 @@
+.dashboard-pagination {
+	display: flex;
+	justify-content: center;
+	margin: 25px auto 0;
+
+	li {
+		list-style-type: none;
+		margin: 0 4px;
+	}
+}
+
+.dashboard-pagination__link {
+	font-size: 14px;
+}
+
+.dashboard-pagination__link.router-link-exact-active {
+	color: #F3C211;
+}

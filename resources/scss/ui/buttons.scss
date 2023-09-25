@@ -1,0 +1,221 @@
+.fui-button__container {
+  display: inline-flex;
+
+  padding: 8px;
+  width: fit-content;
+
+  background: rgba(217, 217, 217, 0.1);
+
+  border: 1px solid #585B70;
+  border-radius: 40px;
+
+  transition: $transitionHover;
+
+  &:hover {
+    border-color: $Yellow;
+  }
+}
+
+.fui-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  padding: 15px 40px;
+  width: fit-content;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: $Dark;
+
+  background: $Yellow;
+
+  border: solid 2px $Yellow2;
+  border-radius: 35px;
+
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+
+  transition: $transitionHover;
+
+  user-select: none;
+  cursor: pointer;
+
+  &:hover {
+    color: $Dark;
+    //box-shadow: 0px 0px 5px #F3C111, 0px 4px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  &:active {
+    color: $Dark;
+    background: $Yellow3;
+  }
+}
+
+.fui-button--sm {
+  padding: 11px 22px;
+}
+
+.fui-button__small {
+  width: fit-content;
+  padding: 8px 20px;
+
+  color: $Light;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+
+  background: transparent;
+
+  border: solid 1px $Grey;
+  border-radius: 90px;
+
+  transition: $transitionHover;
+
+  user-select: none;
+
+  &:hover {
+    color: $Light;
+    background: rgba(237, 238, 246, 0.1);
+  }
+
+  &:active {
+    border-color: $Yellow;
+  }
+}
+
+.betting-button {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  padding: 8px 28px;
+  width: fit-content;
+
+  border-radius: 8px;
+  border: solid 1px $Yellow;
+
+  @extend .t1_semibold;
+  color: $Dark;
+
+  background: $Yellow;
+  transition: $transitionHover;
+
+  user-select: none;
+  cursor: pointer;
+
+  &__small {
+    height: 24px;
+    padding: 2px 10px;
+    font-size: 14px;
+  }
+
+  &:hover {
+    background: $Yellow2;
+    color: $Dark;
+  }
+
+  &:active {
+    background: $Yellow3;
+    color: $Dark;
+  }
+}
+
+.betting-button-big {
+  height: 48px;
+}
+
+.button-action-small {
+  @extend .flex-row;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 40px;
+
+  background: rgba(217, 217, 217, 0.05);
+
+  color: $Light;
+
+  @extend .t2_semibold;
+
+  border: 1px solid $Grey;
+  border-radius: 8px;
+
+  transition: $transitionHover;
+
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    border-color: $LightGrey;
+  }
+}
+
+.button-action-small--active {
+  background: linear-gradient(90deg, rgba(68, 111, 221, 0.55) 0%, rgba(68, 111, 221, 0.11) 100%);
+}
+
+.betting-button-icon {
+  padding: 7px 16px;
+  height: 70px;
+  font-size: 24px;
+  font-weight: 600;
+
+  img {
+    width: 49px;
+    height: 49px;
+    margin-right: 9px;
+    margin-top: 2px;
+  }
+}
+
+.button-action-02 {
+  @extend .flex-row;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 42px;
+  height: 48px;
+
+  @extend .t2_semibold;
+  color: $Light;
+
+  background: rgba(217, 217, 217, 0.05);
+
+  border: solid 1px $Grey;
+  border-radius: 8px;
+
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    border-color: $LightGrey;
+  }
+
+  &:focus {
+    background: $Yellow;
+    border-color: $Yellow2;
+    color: $Dark;
+  }
+
+  &--active {
+    background: $Yellow;
+    border-color: $Yellow2;
+    color: $Dark;
+  }
+}
+
+@media(max-width: 920px) {
+  .fui-button {
+    padding: 12px 20px;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+  }
+}

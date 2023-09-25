@@ -1,0 +1,114 @@
+.dashboard-withdraw-funds {
+  &__overlay {
+    position: fixed;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(6, 8, 28, 0.3);
+    backdrop-filter: blur(10px);
+
+    z-index: 7;
+  }
+
+  &__window {
+    position: fixed;
+
+    left: calc(50% - 306px);
+    top: calc(50% - 175px);
+
+    width: 612px;
+    height: auto;
+
+    padding: 30px 40px;
+
+    background: $Dark;
+
+    border: solid 1px $Grey;
+    border-radius: 14px;
+
+    z-index: 8;
+  }
+
+  &__close {
+    position: absolute;
+
+    right: 20px;
+    top: 20px;
+
+    width: 32px;
+    height: 32px;
+
+    background-image: url('../img/dashboard-popup-close.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    user-select: none;
+    cursor: pointer;
+  }
+
+  &__heading {
+    margin-bottom: 30px;
+  }
+
+  &__input-group {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  &__submit-row {
+    justify-content: flex-end;
+  }
+
+  &__success {
+    &-heading,
+    &-text {
+      width: 100%;
+      justify-content: center;
+    }
+
+    &-heading {
+      margin-top: 10px;
+    }
+
+    &-text {
+      margin-top: 10px;
+      opacity: .6;
+    }
+
+    &-image {
+      width: 300px;
+      max-width: 100%;
+
+      margin: 10px auto 0;
+    }
+
+    &-button {
+      display: inline-flex;
+      margin: 26px auto 0;
+    }
+  }
+}
+
+@media(max-width: 840px) {
+  .dashboard-withdraw-funds{
+    &__window {
+      left: 15px;
+      width: calc(100% - 30px);
+      padding: 30px 20px;
+    }
+
+    &__close {
+      right: 0px;
+      top: -50px;
+    }
+
+    &__submit-button {
+      width: 100%;
+    }
+  }
+}

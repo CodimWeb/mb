@@ -1,0 +1,203 @@
+.maran-token-page {
+  padding-top: 70px;
+
+  background-image: url('../img/maran-token-page-background.svg');
+  background-size: auto;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+
+  &__banner {
+    width: 100%;
+    height: 400px;
+
+    background-image: url('../img/maran-token__banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-bottom: solid 1px $Grey;
+  }
+
+  &__content {
+    padding: 80px 0;
+  }
+
+  &__heading {
+    margin-bottom: 50px;
+  }
+
+  &__description {
+    margin-bottom: 55px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+
+    margin-bottom: 80px;
+  }
+
+  &__item-icon {
+    width: 80px;
+    height: 80px;
+
+    margin-bottom: 42px;
+  }
+
+  &__container {
+    width: 910px;
+  }
+
+  &__info {
+    padding: 30px;
+
+    background: rgba(217, 217, 217, 0.05);
+
+    border: solid 1px $Grey;
+    border-radius: 14px;
+
+    &-icon {
+      width: 32px;
+      height: 32px;
+
+      margin-right: 10px;
+    }
+
+    &-grid {
+      display: grid;
+      grid-gap: 0;
+      grid-template-columns: repeat(4, auto);
+
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+
+      border-bottom: solid 1px $LightGrey;
+    }
+
+    &-title {
+      margin-bottom: 3px;
+    }
+
+    &-description {
+      height: 32px;
+      align-items: center;
+    }
+
+    &-contract {
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: auto 112px;
+
+      width: 100%;
+    }
+
+    &-buttons {
+      display: grid;
+      grid-gap: 15px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &-button {
+      display: inline-flex;
+
+      width: 48px;
+      height: 48px;
+
+      background-color: $Yellow;
+      background-size: 24px;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      border-radius: 8px;
+
+      cursor: pointer;
+      user-select: none;
+
+      transition: $transitionHover;
+
+      &:hover {
+        background-color: $Yellow2;
+      }
+
+      &-copy {
+        background-image: url('../img/maran-token-page/copy.svg');
+      }
+
+      &-link {
+        background-image: url('../img/maran-token-page/link.svg');
+      }
+    }
+  }
+
+  &__info-contract-row {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__info-contract-container {
+    overflow: hidden;
+  }
+}
+
+.hidden_input {
+  position:absolute;
+  left: -99999px;
+}
+
+@media(max-width: 920px) {
+  .maran-token-page {
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__info-grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 30px;
+    }
+  }
+}
+
+@media(max-width: 568px) {
+  .maran-token-page {
+    background-image: url('../img/maran-token-page-background-mobile.svg');
+    background-position: center bottom 180px;
+
+    &__banner {
+      background-image: url('../img/maran-token-page/banner-mobile.png');
+    }
+
+    &__heading {
+      margin-bottom: 20px;
+    }
+
+    &__description {
+      margin-bottom: 30px;
+    }
+
+    &__info-contract {
+      grid-template-columns: auto 74px;
+    }
+
+    &__info-grid {
+      grid-template-columns: 1fr;
+    }
+
+    &__item-icon {
+      width: 70px;
+      height: 70px;
+
+      margin-bottom: 10px;
+    }
+
+    &__info-buttons {
+      grid-gap: 10px;
+    }
+
+    &__info-button {
+      width: 36px;
+      height: 36px;
+    }
+  }
+}

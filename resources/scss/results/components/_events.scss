@@ -1,0 +1,130 @@
+.results-page-events {
+  &__list {
+    border: 1px solid $Grey;
+    border-radius: 14px;
+
+    overflow: hidden;
+  }
+
+  &__event-heading {
+    background: rgba(217, 217, 217, 0.05);
+    padding: 11px 20px;
+
+    border-bottom: solid 1px $Grey;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__sport-header {
+    align-items: center;
+
+    height: 44px;
+    padding: 0 12px;
+
+    background: linear-gradient(90deg, rgba(68, 111, 221, 0.55) 0%, rgba(68, 111, 221, 0.11) 100%);
+
+    border-bottom: solid 1px $Grey;
+  }
+
+  &__game-item {
+    padding: 9px 20px;
+    border-bottom: solid 1px $Grey;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__game-item-grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 130fr 140fr 140fr 80fr 80fr;
+
+    margin-bottom: 9px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    & > div {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  &__game-item-small {
+    opacity: .6;
+  }
+
+  &__game-item-big {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.results-page-events__message {
+  padding: 15px 20px;
+  background: rgba(217, 217, 217, 0.05);
+  border: solid 1px $Grey;
+  border-radius: 14px;
+}
+
+@media(max-width: 992px) {
+  .results-page-events__game-item-big {
+    width: 100%;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .results-page-events__event-heading {
+    padding: 11px 15px;
+  }
+
+  .results-page-events__game-item {
+    padding: 9px 15px;
+  }
+}
+
+@media(max-width: 768px) {
+  .results-page {
+    overflow-x: hidden;
+    width: 100vw;
+  }
+
+  .results-page-events__list {
+    width: 100vw;
+
+    margin-left: -15px;
+    margin-right: -15px;
+
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  .results-page-events__game-item-grid-3,
+  .results-page-events__game-item-grid-2 {
+    display: grid;
+    grid-gap: 15px;
+  }
+
+  .results-page-events__game-item-grid-3 {
+    grid-template-columns: 120fr 100fr 90fr;
+  }
+
+  .results-page-events__game-item-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 8px;
+  }
+
+  .results-page-events__game-item-small {
+    margin-bottom: 8px;
+  }
+}

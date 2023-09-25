@@ -1,0 +1,126 @@
+.dashboard-main__heading {
+  margin-bottom: 30px;
+}
+
+.dashboard-main__actions {
+  justify-content: space-between;
+  align-items: flex-start;
+
+  padding: 20px;
+
+  background: rgba(217, 217, 217, 0.05);
+
+  border: solid 1px $Grey;
+  border-radius: 14px;
+}
+
+.dashboard-main__balance {
+  display: grid;
+  grid-gap: 18px;
+  grid-template-columns: 64px auto;
+}
+
+.dashboard-main__balance-icon {
+  display: inline-flex;
+
+  width: 64px;
+  height: 64px;
+
+  background-image: url('../img/currencies/maran.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.dashboard-main__balance-content {
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.dashboard-main__balance-text {
+  margin-bottom: 3px;
+}
+
+.dashboard-main__buttons {
+  height: 64px;
+  align-items: center;
+}
+
+.dashboard-main__button {
+  margin-left: 20px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  &::before {
+    content: '';
+
+    width: 24px;
+    height: 24px;
+
+    margin-right: 12px;
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.dashboard-main__button-add {
+  &::before {
+    background-image: url('../img/dashboard-icons/add-balance.svg');
+  }
+}
+
+.dashboard-main__button-withdraw {
+  &::before {
+    background-image: url('../img/dashboard-icons/witchdraw.svg');
+  }
+}
+
+.dashboard-main__button-detalisation {
+  &::before {
+    background-image: url('../img/dashboard-icons/detalisation.svg');
+  }
+}
+
+@media(max-width: 820px) {
+  .dashboard-main__actions {
+    display: grid;
+    grid-row-gap: 30px;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width: 576px) {
+  .dashboard-main__button {
+    margin: 0;
+  }
+  .dashboard-main__mobile-buttons {
+    width: 100%;
+
+    &-grid-2 {
+      display: grid;
+      grid-column-gap: 30px;
+      grid-template-columns: repeat(2, 1fr);
+
+      margin: 30px 0;
+    }
+
+    .betting-button {
+      width: 100% !important;
+    }
+  }
+}
+
+.wallet-summ {
+    max-width: 180px;
+}
+
+.wallet-summ__input {
+    height: 42px;
+}
